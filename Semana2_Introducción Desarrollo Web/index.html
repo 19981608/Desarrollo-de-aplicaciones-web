@@ -1,29 +1,242 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollo Web</title>
-</head>
-<body style="margin:0; font-family: Arial, sans-serif; background:#f4f7fb; color:#1f2937;">
+    <title>Nexo Digital - Sitio Web Institucional</title>
 
-    <header style="background:#0f172a; color:white; padding:20px 60px; display:flex; justify-content:space-between; align-items:center;">
-        <h2 style="margin:0;">Desarrollo Web</h2>
-        <nav>
-            <span style="margin:0 12px;">HTML</span>
-            <span style="margin:0 12px;">VS Code</span>
-            <span style="margin:0 12px;">GitHub</span>
-        </nav>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4b0082, #7b2cbf);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        nav {
+            background-color: #2d0a4e;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d8b4fe;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        section,
+        aside {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #4b0082;
+            border-bottom: 2px solid #7b2cbf;
+            padding-bottom: 8px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        aside {
+            border-left: 6px solid #7b2cbf;
+            background-color: #f3e8ff;
+        }
+
+        footer {
+            background-color: #2d0a4e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nexo Digital</h1>
+        <p>Soluciones digitales para pequeños negocios y emprendimientos.</p>
     </header>
 
-    <section style="padding:70px 40px; text-align:center; background:linear-gradient(135deg, #2563eb, #0f172a); color:white;">
-        <h1 style="font-size:45px; margin-bottom:15px;">Desarrollo Web</h1>
-        <h2 style="font-weight:normal; max-width:800px; margin:auto;">
-            Página creada para la práctica de instalación, configuración y publicación de un proyecto HTML en GitHub.
-        </h2>
-    </section>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#video">Video</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-    <section style="width:85%; margin:40px auto; display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+    <main>
+
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>
+                Bienvenidos a Nexo Digital, una propuesta creada para ayudar a pequeños negocios
+                a mejorar su presencia en Internet mediante páginas web, catálogos digitales,
+                menús QR y herramientas de contacto en línea.
+            </p>
+        </section>
+
+        <section id="quienes-somos">
+            <h2>Quiénes Somos</h2>
+
+            <p>
+                Nexo Digital es un emprendimiento tecnológico creado por estudiantes de la carrera
+                de Tecnologías de la Información, con el propósito de apoyar a pequeños negocios,
+                emprendedores y profesionales que desean darse a conocer en el mundo digital.
+                Nuestro proyecto nace al observar que muchos negocios locales tienen buenos
+                productos o servicios, pero no cuentan con una página web, un catálogo digital o
+                una forma moderna de comunicarse con sus clientes. Por esta razón, buscamos ofrecer
+                soluciones sencillas, accesibles y adaptadas a las necesidades de cada cliente.
+                Nos enfocamos en crear herramientas digitales funcionales, claras y fáciles de usar,
+                para que los emprendimientos puedan mejorar su imagen, organizar mejor su información
+                y llegar a más personas. Además, promovemos el uso de tecnologías modernas que
+                faciliten la comunicación entre negocios y clientes, contribuyendo al crecimiento
+                y fortalecimiento de los emprendimientos locales.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                alt="Persona trabajando en desarrollo web"
+                width="500">
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+
+            <article>
+                <h3>Servicios principales</h3>
+
+                <ul>
+                    <li>Diseño de páginas web básicas para negocios.</li>
+                    <li>Creación de catálogos digitales.</li>
+                    <li>Menús QR para restaurantes y cafeterías.</li>
+                    <li>Formularios de contacto y pedidos.</li>
+                    <li>Integración de botones de WhatsApp y redes sociales.</li>
+                    <li>Asesoría básica para mejorar la presencia digital.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="video">
+            <h2>Video relacionado</h2>
+
+            <p>
+                El siguiente video muestra información relacionada con el desarrollo web y la presencia digital.
+            </p>
+
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/cVoTm6OvsfI"
+                title="Video relacionado con desarrollo web"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+            <p>
+                Si el video no se visualiza correctamente, haga clic en la imagen.
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=cVoTm6OvsfI" target="_blank">
+                <img src="https://img.youtube.com/vi/cVoTm6OvsfI/hqdefault.jpg"
+                    alt="Video sobre presencia digital"
+                    width="560">
+            </a>
+        </section>
+
+        <aside>
+            <h2>Información complementaria</h2>
+
+            <p>
+                <strong>Promoción:</strong> Diseño de página web básica con asesoría inicial gratuita.
+            </p>
+
+            <p>
+                <strong>Horario de atención:</strong> Lunes a viernes de 09h00 a 17h00.
+            </p>
+        </aside>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p><strong>Correo:</strong> nexodigital.ec@gmail.com</p>
+            <p><strong>Teléfono:</strong> 099 000 0000</p>
+            <p><strong>Dirección:</strong> Puyo, Ecuador</p>
+
+            <p>
+                <strong>Redes sociales:</strong><br>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a><br>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a><br>
+                <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desarrollado por: Cinthia Mishel Carrión Serrano</p>
+        <p>Asignatura: Desarrollo de Aplicaciones Web</p>
+        <p>Año: 2026</p>
+    </footer>
+
+</body>
+
+</html>
+```
+
+
 
         <div style="background:white; padding:25px; width:250px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.12); text-align:center;">
             <h3>Visual Studio Code</h3>
